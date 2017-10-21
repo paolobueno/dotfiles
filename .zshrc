@@ -58,97 +58,17 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 
 source $ZSH/oh-my-zsh.sh
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+source ~/.aliases
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+source ~/.path
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias copy='xclip -sel clip'
 
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
-
-# Android sdk executables
-export PATH="$PATH:/home/paolo/Android/Sdk/platform-tools:/home/paolo/Android/Sdk/tools"
-
-# user bin
-export PATH="$PATH:/home/paolo/bin"
-
-# pip
-export PATH="$PATH:/home/paolo/.local/bin"
-
-# nvm
-export NVM_DIR="/home/paolo/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-export NODE_ENV="development"
-
-alias reshrink='rm -rf node_modules npm-shrinkwrap.json && npm i --no-optional && npm shrinkwrap'
-
-# jmeter
-export PATH="$PATH:/home/paolo/build/apache-jmeter-3.1/bin"
-
-# android
-export PATH="$PATH:$ANDROID_HOME/tools"
-export PATH="$PATH:$ANDROID_HOME/tools/bin"
-export PATH="$PATH:$ANDROID_HOME/platform-tools"
-
 # Z
 . /home/paolo/bin/z/z.sh
-
-# Include every ./bin directory from GOPATHs into PATH
-export PATH="$PATH:${GOPATH//://bin:}/bin"
-
-# RHSM
-export RHSM_USERNAME='phajidec@redhat.com'
-export RHSM_PASSWORD='Yugidlk7&'
-
-export SONAR_SCANNER_HOME='/home/paolo/bin/sonar/'
-
-export EDITOR=vim
-
-# added by travis gem
-[ -f /home/paolo/.travis/travis.sh ] && source /home/paolo/.travis/travis.sh
-
-
-# docker shenanigans
-spotify-docker() {
-	docker run -it \
-	    -v /tmp/.X11-unix:/tmp/.X11-unix \
-	    -e DISPLAY=unix$DISPLAY \
-	    --device /dev/snd \
-	    --name spotify \
-	    jess/spotify
-}
-
-###-tns-completion-start-###
-if [ -f /home/paolo/.tnsrc ]; then 
-    source /home/paolo/.tnsrc 
-fi
-###-tns-completion-end-###
-export LD_LIBRARY_PATH=/opt/pt/lib
-
-# for lerna changelog
-export GITHUB_AUTH="33b54231bf4dc25a6e4aea678a4c426450302956"
 
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/"
 
