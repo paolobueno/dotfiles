@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/paolo/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -64,11 +64,7 @@ source ~/.path
 
 alias copy='xclip -sel clip'
 
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-
 # Z
 . /home/paolo/bin/z/z.sh
 
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/"
-
