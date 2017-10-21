@@ -65,6 +65,6 @@ source ~/.path
 alias copy='xclip -sel clip'
 
 # Z
-source ~/bin/z/z.sh
+. ~/bin/z.sh
 
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/"
