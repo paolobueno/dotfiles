@@ -59,12 +59,8 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 source $ZSH/oh-my-zsh.sh
 
 source ~/.aliases
-
 source ~/.path
-
-alias copy='xclip -sel clip'
+source ~/.functions
 
 # Z
 . ~/bin/z.sh
-
-export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/"
