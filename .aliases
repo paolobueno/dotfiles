@@ -105,3 +105,6 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# generate TOTP-based OTP
+alias oath="oathtool --totp=sha512 -b $(cat ~/totp)"
