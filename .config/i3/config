@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+font pango:DejaVu Sans Mono 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -139,10 +139,15 @@ mode "resize" {
         bindsym ccedilla resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 5 px or 5 ppt
+        bindsym Down resize grow height 5 px or 5 ppt
+        bindsym Up resize shrink height 5 px or 5 ppt
+        bindsym Right resize grow width 5 px or 5 ppt
+
+        bindsym Control+Left resize shrink width 1 px or 1 ppt
+        bindsym Control+Down resize grow height 1 px or 1 ppt
+        bindsym Control+Up resize shrink height 1 px or 1 ppt
+        bindsym Control+Right resize grow width 1 px or 1 ppt
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
@@ -150,7 +155,7 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-bindsym $mod+x exec "xkill"
+bindsym $mod+x exec --no-startup-id "xkill"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
