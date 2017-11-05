@@ -107,4 +107,6 @@ alias reload="exec ${SHELL} -l"
 alias path='echo -e ${PATH//:/\\n}'
 
 # generate TOTP-based OTP
-alias oath="oathtool --totp=sha512 -b $(cat ~/totp)"
+alias oath='oathtool --totp=sha512 -b $(cat ~/totp)'
+
+alias mpvt='optirun mpv --profile=yt'
