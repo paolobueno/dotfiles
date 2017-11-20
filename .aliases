@@ -57,8 +57,8 @@ alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 # Canonical hex dump; some systems have this symlinked
 command -v hd > /dev/null || alias hd="hexdump -C"
 
-# Trim new lines and copy to clipboard
-alias c="tr -d '\n' | xsel --clipboard --input"
+# Copy to clipboard
+alias c="xsel --clipboard --input"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
