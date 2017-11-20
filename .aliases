@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
@@ -92,10 +92,6 @@ done
 # Make Grunt print stack traces by default
 command -v grunt > /dev/null && alias grunt="grunt --stack"
 
-# Stuff I never really use but cannot delete either because of http://xkcd.com/530/
-alias stfu="osascript -e 'set volume output muted true'"
-alias pumpitup="osascript -e 'set volume output volume 100'"
-
 # Kill all the tabs in Chrome to free up memory
 # [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
@@ -106,7 +102,13 @@ alias reload="exec ${SHELL} -l"
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
-# generate TOTP-based OTP
-alias oath='oathtool --totp=sha512 -b $(cat ~/totp)'
-
 alias mpvt='optirun mpv --profile=yt'
+
+# generate TOTP-based OTP
+alias oath="oathtool --totp=sha512 -b $(cat ~/totp)"
+
+# npm
+alias n="npm"
+alias ns="npm run start"
+alias nt="npm run test"
+alias nb="npm run build"
