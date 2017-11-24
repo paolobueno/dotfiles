@@ -187,3 +187,8 @@ new_window pixel
 exec --no-startup-id nm-applet
 # exec --no-startup-id "compton -CGb --backend glx --vsync opengl-swc"
 # exec --no-startup-id unity-settings-daemon
+
+# mpc controls
+bindsym $mod+Control+k exec mpc toggle
+bindsym $mod+Control+l exec mpc next
+bindsym $mod+Control+j exec mpc prev
