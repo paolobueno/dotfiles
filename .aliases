@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+alias open="xdg-open"
+
 # Shortcuts
 alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
