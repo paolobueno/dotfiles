@@ -109,6 +109,10 @@ alias mpvt='optirun mpv --profile=yt'
 # generate TOTP-based OTP
 alias oath="oathtool --totp=sha512 -b $(cat ~/totp)"
 
+# fix gnome-settings-daemon in i3
+alias gnome-control-center="env XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
+alias settings="gnome-control-center"
+
 # npm
 alias n="npm"
 alias ns="npm run start"
