@@ -111,6 +111,7 @@ alias oath="oathtool --totp=sha512 -b $(cat ~/totp)"
 
 # fix gnome-settings-daemon in i3
 alias gnome-control-center="env XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
+alias gnome-tweak-tool="env XDG_CURRENT_DESKTOP=GNOME gnome-tweak-tool"
 alias settings="gnome-control-center"
 
 # npm
