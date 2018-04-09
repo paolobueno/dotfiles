@@ -116,4 +116,4 @@ alias dc="docker-compose"
 # apb command
 alias apb='docker run --rm --privileged -v $PWD:/mnt -v $HOME/.kube:/.kube -v /var/run/docker.sock:/var/run/docker.sock -u $UID docker.io/ansibleplaybookbundle/apb-tools'
 
-alias cpr=rsync -avhP
+alias cpr="rsync -avhP"
