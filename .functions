@@ -173,3 +173,10 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+function nix-shell-at {
+  at=$1
+  shift
+  nix-shell -I "nixpkgs=https://github.com/NixOS/nixpkgs-channels/archive/$at.tar.gz" $@
+}
+
