@@ -1,5 +1,5 @@
 URxvt*.depth:          32
-URxvt.font: xft:DejaVu Sans Mono for Powerline:size=10
+URxvt.font: xft:DejaVu Sans Mono for Powerline:size=10,xft:Symbola,xft:Noto Emoji:minspace=False
 ! Dracula Xresources palette
 *.foreground: #F8F8F2
 *.background: #282A36
