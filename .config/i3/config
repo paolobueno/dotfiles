@@ -195,5 +195,7 @@ bindsym $mod+Control+k exec --no-startup-id mpc toggle
 bindsym $mod+Control+l exec --no-startup-id mpc next
 bindsym $mod+Control+j exec --no-startup-id mpc prev
 
+bindsym $mod+Control+Shift+l exec --no-startup-id xautolock -locknow
+
 # exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 # exec --no-startup-id /usr/libexec/gsd-xsettings
