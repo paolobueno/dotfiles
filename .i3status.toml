@@ -54,5 +54,5 @@ device = "BAT0"
 [[block]]
 block = "time"
 interval = 1
-format = "Week %U %a %d/%m %R:%S"
+format = "wk%U %a %d/%m %R:%S"
 
