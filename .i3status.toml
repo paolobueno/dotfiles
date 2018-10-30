@@ -2,6 +2,9 @@ theme = "solarized-dark"
 icons = "awesome"
 
 [[block]]
+block = "xrandr"
+
+[[block]]
 block = "sound"
 
 [[block]]
