@@ -86,6 +86,13 @@ alias ns="npm run start"
 alias nt="npm run test"
 alias nb="npm run build"
 
+# yarn
+alias y="yarn"
+alias yr="yarn run"
+alias ys="yarn run start"
+alias yt="yarn run test"
+alias yb="yarn run build"
+
 # docker
 alias d="docker"
 alias dc="docker-compose"
