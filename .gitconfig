@@ -37,6 +37,7 @@
 [user]
 	email = "paolohaji@gmail.com"
 	name = "Paolo Bueno"
+	signingkey = 54D9B3EABD1DE71A
 
 [diff]
 
@@ -85,3 +86,6 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+
+[commit]
+	gpgsign = true
