@@ -206,6 +206,10 @@ bindsym $mod+Control+l exec --no-startup-id mpc next
 bindsym $mod+Control+j exec --no-startup-id mpc prev
 
 bindsym $mod+Control+Shift+l exec "i3lock-color -k -c 282a36"
+bindsym $mod+Control+Shift+p exec "gopass ls --flat | dmenu | xargs --no-run-if-empty gopass show -c"
+
+# macros
+bindsym $mod+Shift+w exec "xdotool keyup 'w' && xdotool type --clearmodifiers --delay 0 WEAREREASONABLEPEOPLE"
 
 # exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 # exec --no-startup-id /usr/libexec/gsd-xsettings
