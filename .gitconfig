@@ -92,3 +92,7 @@
 
 [protocol]
 	version = 2
+
+[open "git.messagebird.io"]
+	domain = gitlab.messagebird.io
+	protocol = https
