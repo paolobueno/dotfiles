@@ -13,6 +13,9 @@ export LESSOPEN='|~/.lessfilter %s'
 # https://github.com/keybase/keybase-issues/issues/2798
 export GPG_TTY=$(tty)
 
+export GO111MODULE=on
+export GOPRIVATE=gitlab.messagebird.io
+
 if [[ "$OSTYPE" == "darwin"* ]]; then
   export ZSH="/Users/paolo/.oh-my-zsh"
   ZSH_THEME="robbyrussell"
