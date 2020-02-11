@@ -21,7 +21,6 @@ format_mem = "{Mup}%"
 format_swap = "{SUp}%"
 
 [[block]]
-format = "{average}C"
 block = "temperature"
 collapsed = false
 interval = 10
@@ -34,7 +33,7 @@ format = "{1m}"
 
 [[block]]
 block = "net"
-device = "wlp2s0"
+device = "enp5s0"
 ssid = true
 ip = true
 speed_up = false
