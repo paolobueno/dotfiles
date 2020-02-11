@@ -41,12 +41,6 @@ speed_up = false
 interval = 3
 
 [[block]]
-block = "battery"
-interval = 10
-show = "percentage"
-device = "BAT0"
-
-[[block]]
 block = "time"
 interval = 1
 format = "wk%U %a %d/%m %R:%S"
