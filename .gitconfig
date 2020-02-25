@@ -87,12 +87,16 @@
 
 	insteadOf = "gist:"
 
+[url "git@git.messagebird.io:"]
+
+ insteadOf = https://gitlab.messagebird.io/
+
 [commit]
 	gpgsign = true
 
 [protocol]
 	version = 2
 
-[open "git.messagebird.io"]
+[open "https://git.messagebird.io"]
 	domain = gitlab.messagebird.io
 	protocol = https
