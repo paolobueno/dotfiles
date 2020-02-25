@@ -1,6 +1,7 @@
 source ~/.path
 source ~/.aliases
 source ~/.functions
+source ~/.secrets
 
 export LESS='-R'
 
@@ -25,5 +26,12 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-  source /Users/paolo/.nix-profile/etc/profile.d/nix.sh
+  # . /etc/static/zshrc
+  # . /Users/paolo/.nix-profile/etc/profile.d/nix.sh
 fi
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '${HOME}/google-cloud-sdk/path.zsh.inc' ]; then . '${HOME}/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '${HOME}/google-cloud-sdk/completion.zsh.inc' ]; then . '${HOME}/google-cloud-sdk/completion.zsh.inc'; fi
