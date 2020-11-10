@@ -19,7 +19,7 @@ export GOPRIVATE=gitlab.messagebird.io
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
   export ZSH="/Users/paolo/.oh-my-zsh"
-  ZSH_THEME="robbyrussell"
+  ZSH_THEME=""
   plugins=(git git-open)
   source $ZSH/oh-my-zsh.sh
 
@@ -29,7 +29,16 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   # . /etc/static/zshrc
   # . /Users/paolo/.nix-profile/etc/profile.d/nix.sh
 
-	# homebrew google cloud sdk
-  source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-  source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+  # homebrew google cloud sdk
+  # The next line updates PATH for the Google Cloud SDK.
+  if [ -f '/Users/paolo/Downloads/gc/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/paolo/Downloads/gc/google-cloud-sdk/path.zsh.inc'; fi
+
+  # The next line enables shell command completion for gcloud.
+  if [ -f '/Users/paolo/Downloads/gc/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/paolo/Downloads/gc/google-cloud-sdk/completion.zsh.inc'; fi
+
+
+  eval "$(pyenv init -)"
+  eval "$(direnv hook zsh)"
 fi
+
+eval "$(starship init zsh)"

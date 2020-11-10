@@ -15,6 +15,7 @@ Thumbs.db
 
 # environment
 .env
+.envrc
 
 # test output dir
 test-output/

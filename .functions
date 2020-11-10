@@ -179,12 +179,3 @@ function nix-shell-at {
   shift
   nix-shell -I "nixpkgs=https://github.com/NixOS/nixpkgs-channels/archive/$at.tar.gz" $@
 }
-
-function open() {
-	nohup xdg-open "$@" >/dev/null 2>&1 &
-}
-
-# open with output to nohup.out
-function openv() {
-	nohup xdg-open "$@" &
-}
